@@ -214,8 +214,13 @@ hr{
     position: relative; 
 	float: left;
 	color: #fff;
+    width: max-content;
 }
-
+/* 
+.title h1 div{
+    width: min-content;
+}
+ */
 .title .title-span{
     background-color: var(--primaryColor);
     color: black;
@@ -474,7 +479,11 @@ footer svg:hover{
         height: 160px;
     }
 
+    .title h1{
+        width: min-content;
+    }
 
+    
     .menu{
         height: 190px;
         width: 48px;
