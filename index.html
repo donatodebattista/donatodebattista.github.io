@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donato De Battista</title>
+
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!--LINK GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+    <!--LINK FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/e80274918b.js" crossorigin="anonymous"></script>
+
+    <!--SCRIPTS EMAILJS-->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+    <script type="text/javascript">
+    emailjs.init('NUPF61cI8SpywsEnm')
+    </script>
+</head>
+<body>
+    <nav id="1">
+        <div class="left-navbar">
+            <a href="index.html">
+                <p>DoniDev</p> 
+            </a> 
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff3b5c" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <polyline points="7 8 3 12 7 16" />
+                <polyline points="17 8 21 12 17 16" />
+                <line x1="14" y1="4" x2="10" y2="20" />
+              </svg>
+        </div>
+
+        <div class="right-navbar">
+            <a href="#contact-me"><button>Contáctame</button></a>
+        </div>
+    </nav>
+    
+    <hr>
+    <div class="menu">
+        <a href="#1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff3b5c" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <polyline points="5 12 3 12 12 3 21 12 19 12" />
+                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+              </svg>    
+        </a>
+
+        <a href="#about-me">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff3b5c" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="7" r="4" />
+                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+              </svg>
+        </a>
+        
+        <a href="#contact-me" id="msg-icon-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff3b5c" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <polyline points="3 7 12 13 21 7" />
+              </svg>    
+
+        </a>
+    </div>
+
+    <section class="presentation-section">
+        <img src="./images/doni-sin-fondo.png" alt="Doni-image">
+        <p>Hola, soy doni👋🏻</p>
+        <div class="title">
+            <h1>
+                Web
+                <span class="title-span">developer.</span>
+                <span class="maquina-escribir">&#160;</span>
+            </h1>
+        </div>
+    </section>
+
+    <section id="about-me" class="about-me-container">
+        <div class="about-me-content">
+            <div class="about-me-text">
+                <h2>Sobre mi</h2>
+                <p>Mi nombre es <span>Donato De Battista</span>, tengo 21 años y vivo en <span>Argentina</span>. Actualmente me encuentro estudiando la carrera <span>Licenciatura en Sistemas de Información</span>, cursando tercer año. He enfocado mi carrera al estudio del <span>desarrollo web</span>, aprendiendo <span>nuevas tecnologías</span> y desarrollando proyectos como desafíos personales.
+            </div>
+    
+            <img src="./images/moon-mountain.jpg" alt="moon-mountain">
+        </div>
+    </section>
+
+
+    <div id="contact-me" class="contact-container">
+        <div class="contact-text">
+            <h2>Comencemos a trabajar juntos!</h2>
+            <p>Contáctame</p>    
+        </div>
+        
+        <form id="contact-form">
+
+            <label for="from_email">E-mail</label>
+            <input type="email" name="from_email" id="from_email" placeholder="Ingrese su email" required>
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" placeholder="Enviame un mensaje!" required></textarea>
+            <input type="submit" id="send-email-button" value="Enviar email">
+        </form>
+
+    </div>
+
+    <footer>
+        <p>donatodebattista16@gmail.com</p>
+
+        <div class="link-icons">
+            <a href="https://www.linkedin.com/in/donato-de-battista-218b92254/">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff3b5c" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                    <line x1="8" y1="11" x2="8" y2="16" />
+                    <line x1="8" y1="8" x2="8" y2="8.01" />
+                    <line x1="12" y1="16" x2="12" y2="11" />
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                  </svg>
+            </a>
+        </div>
+        
+        <p id="copyright-text">© 2023 Donato De Battista. todos los derechos reservados</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
