@@ -216,11 +216,7 @@ hr{
 	color: #fff;
     width: max-content;
 }
-/* 
-.title h1 div{
-    width: min-content;
-}
- */
+
 .title .title-span{
     background-color: var(--primaryColor);
     color: black;
@@ -234,7 +230,7 @@ hr{
     width:0;
     background: var(--backgroudColor);
     border-left: 5px solid black;
-    animation: escribir 4.5s steps(29), titilar 1s infinite;
+    animation: escribir 3.5s steps(11), titilar 1s infinite;
 }
 
 
@@ -286,7 +282,6 @@ hr{
     font-weight: 100;
     font-size: 1.1rem;
     color: rgb(255, 255, 255);
-    text-align: justify;
 }
 
 .about-me-container .about-me-text p span{
