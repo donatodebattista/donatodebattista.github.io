@@ -2,6 +2,20 @@ const btn = document.getElementById('send-email-button');
 const email_input = document.getElementById('from_email');
 const message = document.getElementById('message');
 
+const texto = "Web Developer";
+let i = 0;
+const velocidad = 200;
+
+function escribir() {
+    if (i < texto.length) {
+        document.getElementById("escribir-texto").innerHTML += texto.charAt(i);
+        i++;
+        setTimeout(escribir, velocidad);
+    }
+}
+
+escribir();
+
 document.getElementById('contact-form')
  .addEventListener('submit', function(event) {
    event.preventDefault();

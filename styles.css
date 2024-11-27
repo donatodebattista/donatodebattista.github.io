@@ -202,20 +202,25 @@ hr{
     to {opacity: 100; transform: translate(0px);}
 }
 
-.title{
-    margin: auto;
-    text-align: center;
+#escribir-texto {
+    font-size: 34px;
+    white-space: nowrap; /* Para evitar el salto de línea automático */
+    overflow: hidden; /* Ocultar el texto que aún no ha aparecido */
+    border-right: 3px solid black; /* Simula el cursor de la máquina de escribir */
+    padding-right: 5px;
+    margin-top: 50px;
 }
 
-.title h1{
-    font-size: 3rem;
-    letter-spacing: 8px;
-    margin-top: 60px;
-    position: relative; 
-	float: left;
-	color: #fff;
-    width: max-content;
+@keyframes parpadeo {
+    0% { border-color: transparent; }
+    50% { border-color: rgb(255, 255, 255); }
+    100% { border-color: transparent; }
 }
+
+#escribir-texto {
+    animation: parpadeo 1s infinite step-end;
+}
+
 
 .title .title-span{
     background-color: var(--primaryColor);
@@ -353,7 +358,7 @@ hr{
 .contact-container form input:focus, textarea:focus{
     outline: none;
     border: 2px solid var(--primaryColor);
-    background-color: #0a0316;
+    background-color: #010001;
 }
 
 .contact-container form textarea{
@@ -522,6 +527,9 @@ footer svg:hover{
         width: min-content;
     }
 
+    #escribir-texto{
+        font-size: 24px;
+    }
     
     .menu{
         height: 190px;
