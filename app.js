@@ -22,8 +22,8 @@ document.getElementById('contact-form')
 
    btn.value = 'Enviando...';
 
-   const serviceID = 'default_service';
-   const templateID = 'template_d6utczb';
+   const serviceID = 'service_dy531ev';
+   const templateID = 'template_t8adorc';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
