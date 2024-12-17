@@ -554,4 +554,8 @@ footer svg:hover{
         font-weight: 100;
         font-size: 0.8rem;
     }
+
+    .contact-container{
+        height: 80vh;
+    }
 }
