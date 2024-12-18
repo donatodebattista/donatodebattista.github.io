@@ -6,6 +6,7 @@ const texto = "Web Developer";
 let i = 0;
 const velocidad = 200;
 
+
 function escribir() {
     if (i < texto.length) {
         document.getElementById("escribir-texto").innerHTML += texto.charAt(i);
