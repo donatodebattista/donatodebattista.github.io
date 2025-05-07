@@ -1,6 +1,5 @@
 :root{
     --textColor: rgb(255, 255, 255);
-    --textColorHover: #fbff00;
 
     --backgroudColor: #090313;
     
@@ -18,7 +17,6 @@
     
     --primaryColor: #fffc3b;
     --primaryColorHover: rgb(249, 250, 202);
-
 } */
 
 *{
@@ -152,6 +150,10 @@ hr{
 
 #msg-icon-menu svg{
     margin-bottom: 0;
+}
+
+.icon{
+    stroke: var(--primaryColor);
 }
 
 /*SECCION PRESENTACION**/
@@ -295,11 +297,11 @@ hr{
 }
 
 .about-me-container img{
-    width: 285px;
-    height: 195px;
+    width: 240px;
     border-radius: 10px;
     align-self: center;
     position: relative;
+    filter: drop-shadow(1px 1px 50px var(--primaryColor));
 }
 
 
@@ -317,7 +319,7 @@ hr{
 }
 
 .contact-container .contact-text h2{
-    color: #ff3b5c;
+    color: var(--primaryColor);
     margin-bottom: 20px;
 }
 
