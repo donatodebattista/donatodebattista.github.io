@@ -137,7 +137,7 @@ nav{
     position: absolute;
     top: 100%;
     right: 1rem;
-    background-color: #06020c;
+    background-color: black;
     color: black;
     border: 1px solid var(--primaryColor);
     border-radius: 4px;
@@ -172,7 +172,7 @@ hr{
 }
 
 .menu{
-    background-color: rgb(8, 8, 8);
+    background-color: black;
     height: 290px;
     width: 74px;
     display: flex;
@@ -333,7 +333,7 @@ hr{
     align-items: center;
     justify-content: center;
     width: 40%;
-    background-color: #080808
+    background-color: black
 }
  
 .about-me-container .about-me-text h2{
@@ -452,7 +452,7 @@ hr{
 
 footer{
     width: 100%;
-    background-color: #080808;
+    background-color: black;
     color: white;
     height: 180px;
     text-align: center;
