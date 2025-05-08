@@ -2,6 +2,10 @@ const btn = document.getElementById('send-email-button');
 const email_input = document.getElementById('from_email');
 const message = document.getElementById('message');
 
+const toggle = document.getElementById("bars-navbar-btn");
+const dropdown = document.getElementById("dropdownMenu");
+
+
 const texto = "Desarrollador Web";
 let i = 0;
 const velocidad = 200;
@@ -38,4 +42,18 @@ document.getElementById('contact-form')
       message.value = '';
       alert(JSON.stringify(err));
     });
+});
+
+
+
+
+
+toggle.addEventListener("click", () => {
+  dropdown.classList.toggle("show");
+});
+
+document.addEventListener("click", (e) => {
+  if (!toggle.contains(e.target) && !dropdown.contains(e.target)) {
+    dropdown.classList.remove("show");
+  }
 });
