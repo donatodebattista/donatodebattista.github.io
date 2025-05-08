@@ -333,7 +333,7 @@ hr{
     align-items: center;
     justify-content: center;
     width: 40%;
-    background-color: black
+    background-color: black;
 }
  
 .about-me-container .about-me-text h2{
@@ -359,6 +359,7 @@ hr{
     align-self: center;
     position: relative;
     filter: drop-shadow(1px 1px 50px var(--primaryColor));
+    border-radius: 50%;
 }
 
 
