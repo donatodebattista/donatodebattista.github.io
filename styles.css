@@ -1,9 +1,9 @@
 :root{
     --textColor: rgb(255, 255, 255);
 
-    --backgroudColor: #090313;
+    --backgroudColor: rgb(9, 3, 19);
     
-    --primaryColor: #ff3b5c;
+    --primaryColor: rgb(255, 59, 92);
     --primaryColorHover: rgb(249, 250, 202);
 
 }
@@ -38,12 +38,12 @@ body{
 }
 
 ::-webkit-scrollbar-track{
-    background-color: var(--backgroudColor);
+    background: black;
     
 }
 
 ::-webkit-scrollbar-thumb {
-    background: black;
+    background: #101010;
     border-radius: 3px;
   }
 
@@ -76,7 +76,7 @@ nav{
     display: inline-block;
     position: relative;
     bottom: 2px;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--textColor);
     transition: all 0.2s ease;
 }
@@ -97,7 +97,7 @@ nav{
 .right-navbar button{
     width: 100px;
     height: 35px;
-    font-size: 14px;
+    font-size: 0.875rem;
     background-color: var(--primaryColor);
     color: black;
     border: none;
@@ -124,7 +124,7 @@ hr{
 }
 
 .menu{
-    background-color: #000000;
+    background-color: rgb(8, 8, 8);
     height: 290px;
     width: 74px;
     display: flex;
@@ -163,6 +163,7 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 60vh;
     margin-top: 120px;
 }
 
@@ -205,7 +206,7 @@ hr{
 }
 
 #escribir-texto {
-    font-size: 34px;
+    font-size: 2.125rem;
     white-space: nowrap; /* Para evitar el salto de línea automático */
     overflow: hidden; /* Ocultar el texto que aún no ha aparecido */
     border-right: 3px solid black; /* Simula el cursor de la máquina de escribir */
@@ -268,14 +269,23 @@ hr{
 }
 
 .about-me-content{
-    width: 70%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    height: 100%;
 }
 
 .about-me-container .about-me-text{
-    width: 50%;
+    width: 60%;
+    padding: 0px 10%;
+}
+
+.about-me-container .avatar-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background-color: #080808
 }
  
 .about-me-container .about-me-text h2{
@@ -298,7 +308,6 @@ hr{
 
 .about-me-container img{
     width: 240px;
-    border-radius: 10px;
     align-self: center;
     position: relative;
     filter: drop-shadow(1px 1px 50px var(--primaryColor));
@@ -371,7 +380,7 @@ hr{
     width: 100%;
     text-align: center;
     height: 40px;
-    font-size: 14px;
+    font-size: 0.875rem;
     background-color: var(--primaryColor);
     color: black;
     border: none;
@@ -395,7 +404,7 @@ hr{
 
 footer{
     width: 100%;
-    background-color: black;
+    background-color: #080808;
     color: white;
     height: 180px;
     text-align: center;
@@ -404,7 +413,7 @@ footer{
 
 footer p{
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 footer svg{
@@ -418,16 +427,17 @@ footer svg:hover{
 #copyright-text{
     color: rgb(112, 112, 112);
     position: relative;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 @media screen and (max-width: 1100px) {
 
-    .about-me-content img{
+    .about-me-content .avatar-container{
         display: none;
     }
     .about-me-container .about-me-text{
         width: 100%;
+        margin-left: 5%;
     }
 
     .title{
@@ -511,13 +521,13 @@ footer svg:hover{
     }
 
     .left-navbar p{
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .right-navbar button{
         width: 77px;
         height: 27px;
-        font-size: 11px;
+        font-size: 0.688rem;
     }
 
     .presentation-section img{
@@ -530,7 +540,7 @@ footer svg:hover{
     }
 
     #escribir-texto{
-        font-size: 24px;
+        font-size: 1.5rem;
     }
     
     .menu{
