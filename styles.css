@@ -64,6 +64,7 @@ nav{
     justify-content: space-between;
     padding: 20px;
     margin: 10px auto;
+    position: relative;
 }
 
 .left-navbar{
@@ -93,8 +94,26 @@ nav{
     color: var(--textColor);
 }
 
+.right-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
-.right-navbar button{
+#bars-navbar-btn{
+    color: white;
+    border: none;
+    background: transparent;
+    margin-left: 20px;
+}
+
+#bars-navbar-btn:hover{
+    cursor: pointer;
+    color: var(--primaryColor)
+}
+
+.right-navbar #contact-btn{
     width: 100px;
     height: 35px;
     font-size: 14px;
@@ -106,12 +125,41 @@ nav{
     margin-bottom: 3px;
 }
 
-.right-navbar button:hover{
+.right-navbar #contact-btn:hover{
     cursor: pointer;
     background-color: var(--backgroudColor);
     color: var(--primaryColor);
     border: 1px solid var(--primaryColor);
 
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    background-color: #06020c;
+    color: black;
+    border: 1px solid var(--primaryColor);
+    border-radius: 4px;
+    display: none;
+    flex-direction: column;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+.dropdown a {
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.dropdown a:hover {
+    background-color: #110622;
+}
+
+.dropdown.show {
+    display: flex;
 }
 
 hr{
@@ -514,10 +562,19 @@ footer svg:hover{
         font-size: 14px;
     }
 
-    .right-navbar button{
-        width: 77px;
-        height: 27px;
+
+    .right-navbar #contact-btn{
+        width: 75px;
+        height: 25px;
         font-size: 11px;
+    }
+
+    .right-navbar #bars-navbar-btn{
+        margin-left: 15px;
+    }
+
+    .right-navbar #bars-icon{
+        font-size: medium;
     }
 
     .presentation-section img{
